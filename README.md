@@ -1,4 +1,4 @@
-Membesr:
+Members:
 
 DELA CUEVA, SAMANTHA
 NISAY, JUAN ALFONSO
