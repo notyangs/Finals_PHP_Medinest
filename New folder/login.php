@@ -1,0 +1,6 @@
+<?php
+$page_title="Sign in"; include("includes/header.php"); $message="";
+if(isset($_POST["login"])){require_csrf();$email=strtolower(safe_field($_POST["email"]));$password=(string)$_POST["password"];$user=find_row("users.txt",2,$email);if(isset($user[0])&&password_matches($password,$user[3])){session_regenerate_id(true);$_SESSION["csrf_token"]=bin2hex(random_bytes(32));$_SESSION["user_id"]=$user[0];$_SESSION["name"]=$user[1];$_SESSION["email"]=$user[2];$_SESSION["role"]=$user[6];audit("Signed in");redirect_box($user[6]=="admin"?"admin/index.php":"store.php","Welcome back, ".$user[1].".");}else{$message="Email or password is incorrect.";}}
+?>
+<section class="auth-layout"><div><span class="eyebrow">Welcome back</span><h1>Good to see you.</h1><p>Sign in to continue your MediNest experience.</p></div><form class="panel form" method="post"><?php echo csrf_field(); ?><h2>Sign in</h2><?php if($message!="")echo '<div class="notice">'.h($message).'</div>';?><label>Email address<input name="email" type="email" autocomplete="email" required></label><label>Password<input name="password" type="password" autocomplete="current-password" required></label><button class="button full" name="login">Sign in</button><p class="form-note">New here? <a href="register.php">Create an account</a></p></form></section>
+<?php include("includes/footer.php"); ?>

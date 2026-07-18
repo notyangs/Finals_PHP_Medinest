@@ -1,0 +1,5 @@
+MEDINEST PHARMACY - TEST ACCOUNTS
+
+ADMINISTRATOR
+Email: admin@medinest.test
+Password: MediNest!Admin#2026

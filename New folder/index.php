@@ -1,0 +1,8 @@
+<?php $page_title="Home"; include("includes/header.php"); ?>
+<section class="hero">
+    <div><span class="eyebrow">Your neighborhood wellness partner</span><h1>Everyday care,<br><em>made simpler.</em></h1><p>Shop practical pharmacy essentials from a clean, friendly storefront designed for busy families.</p><div class="actions"><a class="button" href="store.php">Browse products</a><a class="text-link" href="about.php">Meet MediNest &rarr;</a></div></div>
+    <div class="hero-card"><img class="hero-card-photo" src="assets/images/home-health-hero.png" alt="Organized first-aid and home wellness essentials"><div class="hero-card-content"><span>Care pick</span><h2>Home health essentials</h2><p>Thoughtfully organized products, clear pricing, and an easy checkout flow.</p><a href="store.php">Explore the collection &rarr;</a></div></div>
+</section>
+<section class="trust-strip"><div><strong>6</strong><span>starter products</span></div><div><strong>4</strong><span>clear categories</span></div><div><strong>100%</strong><span>course-built demo</span></div></section>
+<section class="section"><span class="eyebrow">Why MediNest</span><h2>Good care starts with clarity.</h2><div class="feature-grid"><article><b>01</b><h3>Easy to browse</h3><p>Products grouped into useful categories with straightforward details.</p></article><article><b>02</b><h3>Simple ordering</h3><p>A focused cart and checkout that keeps each step understandable.</p></article><article><b>03</b><h3>Stock visibility</h3><p>Seller tools make product quantities and activity easy to review.</p></article></div></section>
+<?php include("includes/footer.php"); ?>
